@@ -1,0 +1,49 @@
+{
+	"cellManager": "/js/cell_modules/cell-manager.js",
+	"cellLayout": "/js/cell_modules/cell.js",
+	"parsers" : {
+		"javascript": "/js/code_parsers/js-parser.js"
+	},
+	"evaluator": "/js/evaluation/evaluator.js",
+	"spreads": [
+		{
+			"name": "beginning",
+			"paragraphs": [
+				{
+					"language": "javascript",
+					"code": "console.log('Hello World!')"
+				},
+				{
+					"language": "javascript",
+					"code": "const add = (a,b) => a+b"
+				}
+			]
+		},
+		{
+			"name": "middle",
+			"paragraphs": [
+				{
+					"language": "javascript",
+					"code": "console.log(add(234,534))"
+				},
+				{
+					"language": "javascript",
+					"code": "console.log(add("Hello ", "World!))"
+				}
+			]
+		},
+		{
+			"name": "end",
+			"paragraphs": [
+				{
+					"language": "javascript",
+					"code": "console.log('The end')"
+				},
+				{
+					"language": "javascript",
+					"code": "console.log(add("Goodbye ", "World!))"
+				}
+			]
+		}
+	]
+}
